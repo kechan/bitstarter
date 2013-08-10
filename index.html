@@ -97,7 +97,26 @@
       .footer a {
         color: #ccccff;
       }
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+         width:180px;
+         margin: 0 auto;
+      }
     </style>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43005679-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
   </head>
   <body>
 
@@ -194,6 +213,18 @@
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+              <a class="addthis_button_preferred_1"></a>
+              <a class="addthis_button_preferred_2"></a>
+              <!-- a class="addthis_button_preferred_3"></a -->
+              <!-- a class="addthis_button_preferred_4"></a -->
+              <a class="addthis_button_compact"></a>
+              <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52046aad22b69ba4"></script>
+<!-- AddThis Button END -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
@@ -213,7 +244,7 @@
         <div class="span5 copy">
           <p>
 <b>What is this?</b><p>
-      Physi-craft aims to show young students fundamental concepts in physics by allowing them to create things visually and interact with them intuitively. We believe learning difficult concepts should start with creative constructions and active explorations. We know no better way to do this than by simulating the physics of the things they created themselves, and letting them "mess" with it to their hearts' content.
+      Physi-craft aims to demonstrate fundamental concepts in physics to young students by allowing them to create things visually and interact with them intuitively. We believe learning difficult concepts should start with creative constructions and active explorations. We know no better way to do this than by simulating the physics of the things they have built themselves, and letting them play around with their own creations.
           </p>
         </div>
       </div>
@@ -222,7 +253,7 @@
         <div class="span5 offset1 copy copy-right">
           <p>
              <b>Why bother?</b><p>
-Young kids grow up with multitouch mobile devices. In fact, most may have "used" one before they could even stand up. We are taking advantage of this ubiquitous medium to get them interested in physics, science, and engineering in general. Physics is the bedrock upon which we build up our understanding of how things work. We don't want to see them play Angry Birds all days long (although knowing some physics may help). In fact, we don't even want them to crutch at their iPhones and iPads just playing our app for fun. Our ultimate goal is to get them interested in science and engineering, and that means exploring the world around them by observing, hypothesizing, and experimenting. Our app is the appetizer, not the main course.
+Young kids grow up with multitouch mobile devices. In fact, most may have "used" one before they could even stand up. We are taking advantage of this ubiquitous medium to get them interested in physics, science, and engineering in general. Physics is the bedrock upon which we build our understanding of how things work. We don't want to see them play Angry Birds all day long (although knowing some physics may help). In fact, we don't even want them to crutch at their iPhones and iPads just playing our app for fun. Our ultimate goal is to get them interested in science and engineering, and that means exploring the world around them by observing, hypothesizing, and experimenting. Our app is the appetizer, not the main course.
           </p>
         </div>
         <div class="span5 asset">
@@ -280,5 +311,15 @@ Young kids grow up with multitouch mobile devices. In fact, most may have "used"
         </div>
       </div>
     </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43005679-1', 'herokuapp.com');
+  ga('send', 'pageview');
+
+  </script>
   </body>
 </html>
